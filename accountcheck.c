@@ -1,6 +1,6 @@
+#define rep(k, l, j) for (int k = l; k <= j; k++)
 int accountcheck(char *username,char *password)
 {
-	int flag_temp=0;
     FILE *fp;
     char str[200];
 	/*
@@ -20,7 +20,6 @@ int accountcheck(char *username,char *password)
 		fscanf(fp,"%s",str);
 		if(strcmp(str,username)==0)//  ����û���
 		{
-			flag_temp=1;
 			fscanf(fp,"%s",str);
 			if(strcmp(str,password)==0)
 			{
@@ -37,6 +36,4 @@ int accountcheck(char *username,char *password)
 	}
 	fclose(fp);
     return -1;
-
 }
-

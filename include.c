@@ -3,9 +3,20 @@
 #include <windows.h>
 #include <math.h>
 #include <string.h>
-#include<time.h>
-#include<stdint.h>
+#include <time.h>
+#include <stdint.h>
 #include "welcome.c"
 #include "end.c"
 #include "functionprint.c"
 #include "accountcheck.c"
+#include "logwrite.c"
+#include "statuscheck.c"
+#include "announcement.c"
+#include "debug.c"
+#include "statuschange.c"
+#include "logread.c"
+#include "increase.c"
+#include "announcementmanage.c"
+#include "statistics.c"
+#include "stadiumadd.c"
+#define rep(k, l, j) for (int k = l; k <= j; k++)
